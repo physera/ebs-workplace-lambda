@@ -4,7 +4,7 @@ import os
 
 def parse_message(message):
     foo = [x.split(": ") for x in filter(None, message.split("\n"))]
-    if len(foo) % 2 == 0:
+    if len(foo) > 0:
         return dict(foo)
     else:
         return {}
@@ -24,7 +24,7 @@ def lambda_handler(event, context):
         app = fields.get("Application", "App")
         post = ["# [{} ({})]({})".format(app,
                                          fields["Environment"],
-                                         fields["Enviornment URL"])]
+                                         fields["Environment URL"])]
         post.append("{}".format(fields["Message"]))
     else:
         post = ["# {}".format(message)]
