@@ -10,5 +10,6 @@ someone who is, even if they recently spilled coffee on your shoes.
 * Set up an lambda function that is subscribed to the appropriate SNS alerts.  
 * Add the access token and group_id/thread_id to the environment variables of your lambda function. 
 
-
+## Version History
+* 2018-06-18 Initial Release
 
