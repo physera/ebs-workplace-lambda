@@ -1,4 +1,4 @@
-# eb-workplace-lambda
+# ebs-workplace-lambda
 This repo contains some simple lambda functions for creating an AWS-FB Workplace integration. 
 
 ## Implementation Notes
